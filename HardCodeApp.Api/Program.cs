@@ -1,3 +1,4 @@
+using HardCodeApp.Api.Middleware;
 using HardCodeApp.Application.Products;
 using HardCodeApp.Infrastructure;
 using HardCodeApp.Infrastructure.Repositories;
@@ -22,6 +23,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 {
+    app.UseMiddleware<ErrorHandlingMiddleware>();
+
     app.UseSwagger();
     app.UseSwaggerUI();
 

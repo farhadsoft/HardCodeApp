@@ -1,0 +1,62 @@
+@host=https://localhost:5001
+
+### Get all products
+GET {{host}}/api/Product
+
+### Get product by id
+GET {{host}}/api/Product/1
+
+### Create product
+POST {{host}}/api/Product
+Content-Type: application/json
+
+{
+    "name": "Apple",
+    "description": "string",
+    "price": 1.2,
+    "photoUrl": "string",
+    "categoryId": 1,
+    "fields": [
+        {
+            "id": 1,
+            "name": "Type",
+            "value": "Normal",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "Colour",
+            "value": "Green",
+            "categoryId": 1
+        }
+    ]
+  }
+
+### Update product
+PUT {{host}}/api/Product/1
+Content-Type: application/json
+
+{
+    "name": "Pinapple",
+    "description": "string",
+    "price": 1.2,
+    "photoUrl": "string",
+    "categoryId": 1,
+    "fields": [
+        {
+            "id": 1,
+            "name": "Type",
+            "value": "Normal",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "Colour",
+            "value": "Green",
+            "categoryId": 1
+        }
+  ]
+}
+
+### Delete product
+DELETE {{host}}/api/Product/2

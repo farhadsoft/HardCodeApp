@@ -3,21 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeApp.Api", "HardCodeApp.Api\HardCodeApp.Api.csproj", "{80C12C13-723E-4A24-931A-691FC3E4329E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardCodeApp.Api", "HardCodeApp.Api\HardCodeApp.Api.csproj", "{80C12C13-723E-4A24-931A-691FC3E4329E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeApp.Application", "HardCodeApp.Application\HardCodeApp.Application.csproj", "{01CEDC0E-E8F0-49C5-B772-526ECBF821C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardCodeApp.Application", "HardCodeApp.Application\HardCodeApp.Application.csproj", "{01CEDC0E-E8F0-49C5-B772-526ECBF821C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeApp.Domain", "HardCodeApp.Domain\HardCodeApp.Domain.csproj", "{B6F48521-6EE7-4B8A-B97C-6A1D64A7B361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardCodeApp.Domain", "HardCodeApp.Domain\HardCodeApp.Domain.csproj", "{B6F48521-6EE7-4B8A-B97C-6A1D64A7B361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardCodeApp.Infrastructure", "HardCodeApp.Infrastructure\HardCodeApp.Infrastructure.csproj", "{C16FEB6D-F636-464C-A950-110E8E1AE4BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardCodeApp.Infrastructure", "HardCodeApp.Infrastructure\HardCodeApp.Infrastructure.csproj", "{C16FEB6D-F636-464C-A950-110E8E1AE4BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{DAD2DA46-8078-4A01-AB1C-CE1573D557E0}"
+	ProjectSection(SolutionItems) = preProject
+		Category.http = Category.http
+		Product.http = Product.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{80C12C13-723E-4A24-931A-691FC3E4329E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +39,11 @@ Global
 		{C16FEB6D-F636-464C-A950-110E8E1AE4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C16FEB6D-F636-464C-A950-110E8E1AE4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C16FEB6D-F636-464C-A950-110E8E1AE4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D7DD66-4357-4CB1-8899-57CE7010BB34}
 	EndGlobalSection
 EndGlobal

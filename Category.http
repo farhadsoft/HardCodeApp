@@ -1,0 +1,31 @@
+@host=https://localhost:5001
+
+### Get all categories
+
+GET {{host}}/api/Category
+
+### Get category by id
+
+GET {{host}}/api/Category/1
+
+### Create category
+
+POST {{host}}/api/Category
+Content-Type: application/json
+
+{
+  "name": "Fruit",
+  "fields": [
+    {
+      "name": "Size",
+      "value": "Normal"
+    },
+	{
+      "name": "Colour",
+      "value": "Green"
+    }
+  ]
+}
+
+### Get ProductField by category id
+GET {{host}}/api/Category/1/fields
